@@ -66,7 +66,6 @@ app.get("/posts/:postName", function(req, res){
   if (found) {
       console.log("Match found");
       res.render("post", {currentPostTitle: matchTitle, currentPostBody: matchBody});
-      res.redirect("/");
   } else {
     console.log("Match not found");
   }});
