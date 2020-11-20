@@ -64,10 +64,10 @@ app.get("/posts/:postName", function(req, res){
   });
 
   if (found) {
-      console.log("Match found");
+      // console.log("Match found");
       res.render("post", {currentPostTitle: matchTitle, currentPostBody: matchBody});
   } else {
-    console.log("Match not found");
+    // console.log("Match not found");
   }});
 
 
